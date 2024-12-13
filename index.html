@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Enrico Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Enrico</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#projects">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#achievements">Achievements</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#sdg">SDG</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        
+        <div class="dropdown">
+            <div class="links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#sdg">SDG</a>
+                <a href="#contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section id="about" class="about">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="main.png" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Enrico</span></h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm <span></span></div>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">A passionate web developer dedicated to building innovative solutions that drive sustainability. My work supports <strong>SDG 6: Clean Water and Sanitation</strong>, with the goal of advancing access to clean water and improving sanitation worldwide.</p>
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    
+                </div>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <!-- Button content can go here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML and CSS</li>
+            <li>Database Management</li>
+            <li>Project Management</li>
+            <li>Cybersecurity</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Water Scarcity Prediction and Alert System</h3>
+            <p>An AI-powered predictive system that forecasts water scarcity issues in specific regions based on weather patterns, population data, and historical water consumption trends.</p>
+        </div>
+        <div class="project">
+            <h3>Water Purification Device with Remote Monitoring</h3>
+            <p>A low-cost water purification device with IoT integration that allows users to monitor the device's performance remotely and receive alerts when maintenance is needed.</p>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Completion of Full-Stack Web Development Bootcamp</li>
+            <li>Google Analytics Certification</li>
+            <li>Leadership in IT Team Management</li>
+            <li>Certified Information Systems Security Professional (CISSP)</li>
+        </ul>
+    </section>
+
+    <!-- SDG Alignment Section -->
+    <section id="sdg" class="sdg">
+        <h2>SDG Alignment</h2>
+        <p>
+            My projects and initiatives are centered around <strong>SDG 6: Clean Water and Sanitation</strong>, driving effective resource management and advocating for sustainable practices in both personal and professional contexts.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <ul>
+            <li><strong>Email:</strong> enricoalvaro28@gmail.com</li>
+            <li><strong>Phone:</strong> 09124809593</li>
+            <li><strong>Location:</strong> Mapulo Taysan Batangas</li>
+        </ul>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script>
+        function hamburg(){
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+        }
+        function cancel(){
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)";
+        }
+    </script>
+</body>
+</html>
